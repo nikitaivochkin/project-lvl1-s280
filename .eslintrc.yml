@@ -2,8 +2,8 @@
 
 plugins:
   - jest
-  - flowtype
   - babel
+  - flowtype
 
 env:
   node: true
