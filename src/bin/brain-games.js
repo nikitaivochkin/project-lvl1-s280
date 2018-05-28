@@ -1,4 +1,4 @@
 #!/usr/bin/env node
+import questionOfName from ".."
 console.log('Welcome to the Brain Games!');
-import urerName from "..";
-console.log(`Hello, ${urerName}!`)
+questionOfName();
