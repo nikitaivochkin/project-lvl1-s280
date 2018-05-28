@@ -1,2 +1,3 @@
 import readlineSync from 'readline-sync';
-const actual = readlineSync.question('May I have your name?: ');
+const urerName = readlineSync.question('May I have your name?: ');
+export default urerName;
