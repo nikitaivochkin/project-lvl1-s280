@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-import questionOfName from '..';
+import questionName from '..';
 
-questionOfName();
+questionName();
