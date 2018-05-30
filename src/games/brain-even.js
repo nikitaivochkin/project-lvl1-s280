@@ -22,6 +22,7 @@ const brainEven = () => {
   console.log('Answer "yes" if number even otherwise answer "no".\n');
   const name = readlineSync.question('May I have your name?: ');
   console.log(`Hello, ${name}!\n`);
-  return iter(name, 2);
+  const counter = 2;
+  return iter(name, counter);
 };
 export default brainEven;
