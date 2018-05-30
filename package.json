@@ -1,6 +1,6 @@
 {
   "name": "nikita_ivochkin_project",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "first_project",
   "main": "brain-games",
   "bin": {
@@ -36,7 +36,7 @@
     "eslint": "^4.19.1",
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-plugin-babel": "^5.1.0",
-    "eslint-plugin-flowtype": "^2.47.1",
+    "eslint-plugin-flowtype": "^2.48.0",
     "eslint-plugin-import": "^2.12.0",
     "eslint-plugin-jest": "^21.17.0"
   },
