@@ -5,15 +5,15 @@ const iter = (name, counter) => {
   const question = generateNumber(100, 1);
   console.log(`Question: ${question}!`);
   const rightAnswer = isEvenAnswer(question) ? 'yes' : 'no';
-  const answerOfUser = readlineSync.question('Your answer: ');
-  if (counter === 0 && rightAnswer === answerOfUser) {
+  const usersAnswer = readlineSync.question('Your answer: ');
+  if (counter === 0 && rightAnswer === usersAnswer) {
     console.log('Correct!');
     return console.log(`Congratulations, ${name}!`);
-  } else if (rightAnswer === answerOfUser) {
+  } else if (rightAnswer === usersAnswer) {
     console.log('Correct!');
     return iter(name, counter - 1);
-  } else if (rightAnswer !== answerOfUser) {
-    console.log(`'${answerOfUser}' is wrong answer ;(.Correct answer was '${rightAnswer}'.`);
+  } else if (rightAnswer !== usersAnswer) {
+    console.log(`'${usersAnswer}' is wrong answer ;(.Correct answer was '${rightAnswer}'.`);
     return console.log(`Let's try again, ${name}!`);
   }
   return iter(name, 2);
