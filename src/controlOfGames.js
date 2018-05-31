@@ -30,7 +30,6 @@ export const result = (rightAnswer, usersAnswer, id, name, counter) => {
     console.log('Correct!');
     return console.log(`Congratulations, ${name}!`);
   } else if (controlOfGames(rightAnswer, usersAnswer, counter) === 'Correct!') {
-    console.log(counter);
     console.log('Correct!');
     return identifier(id, name, counter - 1);
   } else if (controlOfGames(rightAnswer, usersAnswer, counter) === 'wrong') {
