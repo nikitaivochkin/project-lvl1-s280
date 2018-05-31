@@ -1,28 +1,32 @@
 import readlineSync from 'readline-sync';
 import { generateNumber, isEvenAnswer } from '../functions';
-
-export const iter = (name, counter) => {
-  const question = generateNumber(100, 1);
-  console.log(`Question: ${question}!`);
-  const rightAnswer = isEvenAnswer(question) ? 'yes' : 'no';
-  const usersAnswer = readlineSync.question('Your answer: ');
-  if (counter === 0 && rightAnswer === usersAnswer) {
-    console.log('Correct!');
-    return console.log(`Congratulations, ${name}!`);
-  } else if (rightAnswer === usersAnswer) {
-    console.log('Correct!');
-    return iter(name, counter - 1);
-  }
-  console.log(`'${usersAnswer}' is wrong answer ;(.Correct answer was '${rightAnswer}'.`);
-  return console.log(`Let's try again, ${name}!`);
-};
+import controlOfGames from '../controlOfGames';
 
 const brainEven = () => {
   console.log('Welcome to the Brain Games!');
   console.log('Answer "yes" if number even otherwise answer "no".\n');
   const name = readlineSync.question('May I have your name?: ');
   console.log(`Hello, ${name}!\n`);
-  const counter = 2;
-  return iter(name, counter);
+
+  const iter = (counter) => {
+    const question = generateNumber(100, 1);
+    const rightAnswer = isEvenAnswer(question) ? 'yes' : 'no';
+
+    console.log(`Question: ${question}`);
+    const usersAnswer = readlineSync.question('Your answer: ');
+
+    if (controlOfGames(rightAnswer, usersAnswer, counter) === 'stop') {
+      console.log('Correct!');
+      return console.log(`Congratulations, ${name}!`);
+    } else if (controlOfGames(rightAnswer, usersAnswer, counter) === 'Correct!') {
+      console.log('Correct!');
+      return iter(counter - 1);
+    } else if (controlOfGames(rightAnswer, usersAnswer, counter) === 'wrong') {
+      console.log(`'${usersAnswer}' is wrong answer ;(.Correct answer was '${rightAnswer}'.`);
+      return console.log(`Let's try again, ${name}!`);
+    }
+    return iter(counter);
+  };
+  return iter(2);
 };
 export default brainEven;
