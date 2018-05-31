@@ -22,11 +22,9 @@ const iter = (name, counter) => {
   } else if (rightAnswer === usersAnswer) {
     console.log('Correct!');
     return iter(name, counter - 1);
-  } else if (rightAnswer !== usersAnswer) {
-    console.log(`'${usersAnswer}' is wrong answer ;(.Correct answer was '${rightAnswer}'.`);
-    return console.log(`Let's try again, ${name}!`);
   }
-  return iter(name, 2);
+  console.log(`'${usersAnswer}' is wrong answer ;(.Correct answer was '${rightAnswer}'.`);
+  return console.log(`Let's try again, ${name}!`);
 };
 
 const brainClac = () => {
