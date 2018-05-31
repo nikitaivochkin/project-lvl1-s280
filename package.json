@@ -41,6 +41,7 @@
     "eslint-plugin-jest": "^21.17.0"
   },
   "dependencies": {
+    "hexlet-pairs": "^1.0.7",
     "readline-sync": "^1.4.9"
   }
 }
