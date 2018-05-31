@@ -1,11 +1,14 @@
 import readlineSync from 'readline-sync';
 import { brainEvenIter } from '../src/games/brain-even';
 import { brainClacIter } from '../src/games/brain-clac';
+import { brainGcdIter } from '../src/games/brain-gcd';
 
 const identifier = (idOfFunc, name, counter) => {
   if (idOfFunc === 'even') {
     return brainEvenIter(name, counter);
-  } return brainClacIter(name, counter);
+  } else if (idOfFunc === 'clac') {
+    return brainClacIter(name, counter);
+  } return brainGcdIter(name, counter);
 };
 
 const controlOfGames = (rightAnswer, usersAnswer, counter) => {
