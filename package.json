@@ -6,7 +6,7 @@
   "bin": {
     "brain-games": "dist/bin/brain-games.js",
     "even": "dist/bin/even.js",
-    "clac": "dist/bin/calc.js",
+    "calc": "dist/bin/calc.js",
     "gcd": "dist/bin/gcd.js"
   },
   "files": [
