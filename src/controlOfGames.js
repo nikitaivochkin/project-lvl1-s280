@@ -7,7 +7,7 @@ const iter = (gameData, counterOfIter) => {
   if (counterOfIter === 0) {
     return 'stop';
   }
-  const questionAndRightAnswer = gameData(counterOfIter);
+  const questionAndRightAnswer = gameData();
   const question = car(questionAndRightAnswer);
   const rightAnswer = cdr(questionAndRightAnswer);
   console.log(`Question: ${question}!`);
