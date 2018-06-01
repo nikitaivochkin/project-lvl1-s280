@@ -1,19 +1,15 @@
-import readlineSync from 'readline-sync';
+import { cons } from 'hexlet-pairs';
 import { generateNumber, isEvenAnswer } from '../functions';
-import { result, game } from '../controlOfGames';
+import startGame from '../controlOfGames';
 
-export const idOfFunc = 'even';
-const task = 'Answer "yes" if number even otherwise answer "no".\n';
-
-export const brainEvenIter = (name, counter) => {
-  const question = generateNumber(100, 1);
+const generatorDataForStartGame = () => {
+  const question = String(generateNumber(100, 1));
   const rightAnswer = isEvenAnswer(question) ? 'yes' : 'no';
-
-  console.log(`Question: ${question}`);
-  const usersAnswer = readlineSync.question('Your answer: ');
-  return result(rightAnswer, usersAnswer, idOfFunc, name, counter);
+  return cons(question, rightAnswer);
 };
-const counter = 2;
-const brainEven = () => game(task, idOfFunc, counter);
+
+const task = 'Answer "yes" if number even otherwise answer "no".';
+
+const brainEven = () => startGame(generatorDataForStartGame, task);
 
 export default brainEven;

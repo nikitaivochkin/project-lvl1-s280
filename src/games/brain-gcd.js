@@ -1,6 +1,6 @@
-import readlineSync from 'readline-sync';
+import { cons } from 'hexlet-pairs';
 import { generateNumber } from '../functions';
-import { result, game } from '../controlOfGames';
+import startGame from '../controlOfGames';
 
 const biggestDivisor = (x, y) => {
   const iter = (counter, acc, acc2) => {
@@ -15,20 +15,16 @@ const biggestDivisor = (x, y) => {
   return iter(x, x, y);
 };
 
-export const idOfFunc = 'gcd';
-const task = 'Find the greatest common divisor of given numbers.\n';
+const task = 'Find the greatest common divisor of given numbers.';
 
-export const brainGcdIter = (name, counter) => {
+const generatorDataForStartGame = () => {
   const randomNum = generateNumber(100, 1);
   const randomNum2 = generateNumber(100, 1);
   const question = `${randomNum} ${randomNum2}`;
   const rightAnswer = String(biggestDivisor(randomNum, randomNum2));
-
-  console.log(`Question: ${question}`);
-  const usersAnswer = readlineSync.question('Your answer: ');
-  return result(rightAnswer, usersAnswer, idOfFunc, name, counter);
+  return cons(question, rightAnswer);
 };
-const counter = 2;
-const brainGcd = () => game(task, idOfFunc, counter);
+
+const brainGcd = () => startGame(generatorDataForStartGame, task);
 
 export default brainGcd;

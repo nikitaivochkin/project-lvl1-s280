@@ -1,31 +1,22 @@
-import readlineSync from 'readline-sync';
-import { cons, car, cdr } from 'hexlet-pairs';
+import { cons } from 'hexlet-pairs';
 import { generateNumber } from '../functions';
-import { result, game } from '../controlOfGames';
+import startGame from '../controlOfGames';
 
-export const idOfFunc = 'clac';
-const task = 'What is the result of the expression?\n';
-
-const getQuestions = (a, b, counter) => {
-  if (counter === 2) {
-    return cons((`${a} + ${b}`), String(a + b));
-  } else if (counter === 1) {
-    return cons((`${a} - ${b}`), String(a - b));
-  } return cons((`${a} * ${b}`), String(a * b));
-};
-
-export const brainClacIter = (name, counter) => {
+const generatorDataForStartGame = (counter) => {
+  const getQuestions = (num1, num2, counterOfGame) => {
+    if (counterOfGame === 2) {
+      return cons((`${num1} + ${num2}`), String(num1 + num2));
+    } else if (counterOfGame === 1) {
+      return cons((`${num1} - ${num2}`), String(num1 - num2));
+    } return cons((`${num1} * ${num2}`), String(num1 * num2));
+  };
   const randomNum = generateNumber(100, 1);
   const randomNum2 = generateNumber(100, 1);
-
-  const question = car(getQuestions(randomNum, randomNum2, counter));
-  const rightAnswer = cdr(getQuestions(randomNum, randomNum2, counter));
-
-  console.log(`Question: ${question}`);
-  const usersAnswer = readlineSync.question('Your answer: ');
-  return result(rightAnswer, usersAnswer, idOfFunc, name, counter);
+  return getQuestions(randomNum, randomNum2, counter - 1);
 };
-const counter = 2;
-const brainClac = () => game(task, idOfFunc, counter);
+
+const task = 'What is the result of the expression?';
+
+const brainClac = () => startGame(generatorDataForStartGame, task);
 
 export default brainClac;
