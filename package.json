@@ -9,7 +9,8 @@
     "calc": "dist/bin/calc.js",
     "gcd": "dist/bin/gcd.js",
     "balance": "dist/bin/balance.js",
-    "progression": "dist/bin/progression.js"
+    "progression": "dist/bin/progression.js",
+    "prime": "dist/bin/prime.js"
   },
   "files": [
     "dist"
