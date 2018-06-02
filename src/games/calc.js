@@ -1,5 +1,5 @@
 import { cons } from 'hexlet-pairs';
-import { generateNumber } from '../functions';
+import generateNumber from '../functions';
 import startGame from '../controlOfGames';
 
 const generatorDataForStartGame = () => {
