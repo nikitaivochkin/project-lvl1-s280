@@ -2,8 +2,6 @@ import { cons } from 'hexlet-pairs';
 import generateNumber from '../utils';
 import startGame from '../controlOfGames';
 
-const isEvenAnswer = num => (num % 2 === 0);
-
 const isPrime = (num) => {
   let result = 2;
   if (num === 1 || num < 1) {
