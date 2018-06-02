@@ -1,5 +1,5 @@
 import { cons } from 'hexlet-pairs';
-import generateNumber from '../functions';
+import generateNumber from '../utils';
 import startGame from '../controlOfGames';
 
 const biggestDivisor = (x, y) => {
