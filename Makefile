@@ -2,7 +2,7 @@ install:
 	npm install
 
 start: 
-	npm run babel-node -- src/bin/balance.js
+	npm run babel-node -- src/bin/progression.js
 
 publish:
 	npm publish

@@ -8,7 +8,8 @@
     "even": "dist/bin/even.js",
     "calc": "dist/bin/calc.js",
     "gcd": "dist/bin/gcd.js",
-    "balance": "dist/bin/balance.js"
+    "balance": "dist/bin/balance.js",
+    "progression": "dist/bin/progression.js"
   },
   "files": [
     "dist"
@@ -38,7 +39,7 @@
     "eslint": "^4.19.1",
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-plugin-babel": "^5.1.0",
-    "eslint-plugin-flowtype": "^2.49.0",
+    "eslint-plugin-flowtype": "^2.49.3",
     "eslint-plugin-import": "^2.12.0",
     "eslint-plugin-jest": "^21.17.0"
   },
