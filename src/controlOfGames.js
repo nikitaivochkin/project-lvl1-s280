@@ -10,7 +10,7 @@ const iter = (gameData, counterOfIter) => {
   const questionAndRightAnswer = gameData();
   const question = car(questionAndRightAnswer);
   const rightAnswer = cdr(questionAndRightAnswer);
-  console.log(`Question: ${question}!`);
+  console.log(`Question: ${question}`);
   const usersAnswer = readlineSync.question('Your answer: ');
 
   if (rightAnswer === usersAnswer) {
