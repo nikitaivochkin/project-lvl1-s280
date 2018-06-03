@@ -7,26 +7,26 @@
 <ol>
     <li>
         <h5>Brain-Even</h5>
-        <a>The task of the game: Answer "yes" if number even otherwise answer "no".<a>
+        <p>The task of the game: Answer "yes" if number even otherwise answer "no".<p>
     </li>
     <li>
         <h5>Brain-Calc</h5>
-        <a>The task of the game: What is the result of the expression?<a>
+        <p>The task of the game: What is the result of the expression?<p>
     </li>
     <li>
         <h5>Brain-Gcd</h5>
-        <a>The task of the game: Find the greatest common divisor of given numbers.<a>
+        <p>The task of the game: Find the greatest common divisor of given numbers.<p>
     </li>
     <li>
         <h5>Brain-Balance</h5>
-        <a>The task of the game: Balance the given number.<a>
+        <p>The task of the game: Balance the given number.<p>
     </li>
     <li>
         <h5>Brain-Prgression</h5>
-        <a>The task of the game: What number is missing in this progression?<a>
+        <p>The task of the game: What number is missing in this progression?<p>
     </li>
     <li>
         <h5>Brain-Prime</h5>
-        <a>The task of the game: Is this number prime?<a>
+        <p>The task of the game: Is this number prime?<p>
     </li>
 </ol>
