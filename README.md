@@ -3,7 +3,7 @@
 <a href="https://travis-ci.org/nikitaivochkin/project-lvl1-s280"><img src="https://travis-ci.org/nikitaivochkin/project-lvl1-s280.svg?branch=master" /></a>
 
 <h1>Welcome to Brain Games!</h1>
-<h3>Your attention presented 6 games for the brain:<h3>
+<h3>Your attention presented 6 games for the brain:</h3>
 <ol>
     <li>
         <h5>Brain-Even</h5>
@@ -30,3 +30,6 @@
         <p>The task of the game: Is this number prime?<p>
     </li>
 </ol>
+
+<h3>Example of starting the game</h3>
+    <img src="page 1.png">
