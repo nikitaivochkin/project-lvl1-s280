@@ -20,6 +20,4 @@ const generatorDataForStartGame = () => {
 
 const task = 'What is the result of the expression?';
 
-const brainClac = () => startGame(generatorDataForStartGame, task);
-
-export default brainClac;
+export default () => startGame(generatorDataForStartGame, task);

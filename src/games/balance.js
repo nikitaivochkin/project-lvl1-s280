@@ -93,6 +93,5 @@ const generatorDataForStartGame = () => {
 
 const task = 'Balance the given number.';
 
-const brainBalance = () => startGame(generatorDataForStartGame, task);
+export default () => startGame(generatorDataForStartGame, task);
 
-export default brainBalance;

@@ -12,6 +12,5 @@ const generatorDataForStartGame = () => {
 
 const task = 'Answer "yes" if number even otherwise answer "no".';
 
-const brainEven = () => startGame(generatorDataForStartGame, task);
+export default () => startGame(generatorDataForStartGame, task);
 
-export default brainEven;

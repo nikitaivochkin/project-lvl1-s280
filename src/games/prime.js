@@ -3,17 +3,15 @@ import generateNumber from '../utils';
 import startGame from '../controlOfGames';
 
 const isPrime = (num) => {
-  let result = 2;
-  if (num === 1 || num < 1) {
+  if (num < 2) {
     return false;
   }
-  for (let counter = 1; num % result !== 0; counter) {
-    result += counter;
+  for (let i = 2; i < num; i += 1) {
+    if (num % i === 0) {
+      return false;
+    }
   }
-  if (result === num) {
-    return true;
-  }
-  return false;
+  return true;
 };
 
 const generatorDataForStartGame = () => {
@@ -24,6 +22,4 @@ const generatorDataForStartGame = () => {
 
 const task = 'Answer "yes" if number is prime otherwise answer "no".';
 
-const brainEven = () => startGame(generatorDataForStartGame, task);
-
-export default brainEven;
+export default () => startGame(generatorDataForStartGame, task);

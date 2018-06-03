@@ -25,6 +25,4 @@ const generatorDataForStartGame = () => {
   return cons(question, rightAnswer);
 };
 
-const brainGcd = () => startGame(generatorDataForStartGame, task);
-
-export default brainGcd;
+export default () => startGame(generatorDataForStartGame, task);
