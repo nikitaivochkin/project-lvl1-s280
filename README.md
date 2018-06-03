@@ -6,27 +6,27 @@
 <h3>Your attention presented 6 games for the brain:<h3>
 <ol>
     <li>
-        <h4>Brain-Even<h4>
-        <p>The task of the game: Answer "yes" if number even otherwise answer "no".<p>
+        <h4>Brain-Even</h4>
+        <a>The task of the game: Answer "yes" if number even otherwise answer "no".<a>
     </li>
     <li>
-        <h4>Brain-Calc<h4>
-        <p>The task of the game: What is the result of the expression?<p>
+        <h4>Brain-Calc</h4>
+        <a>The task of the game: What is the result of the expression?<a>
     </li>
     <li>
-        <h4>Brain-Gcd<h4>
-        <p>The task of the game: Find the greatest common divisor of given numbers.<p>
+        <h4>Brain-Gcd</h4>
+        <a>The task of the game: Find the greatest common divisor of given numbers.<a>
     </li>
     <li>
-        <h4>Brain-Balance<h4>
-        <p>The task of the game: Balance the given number.<p>
+        <h4>Brain-Balance</h4>
+        <a>The task of the game: Balance the given number.<a>
     </li>
     <li>
-        <h4>Brain-Prgression<h4>
-        <p>The task of the game: What number is missing in this progression?<p>
+        <h4>Brain-Prgression</h4>
+        <a>The task of the game: What number is missing in this progression?<a>
     </li>
     <li>
-        <h4>Brain-Prime<h4>
-        <p>The task of the game: Is this number prime?<p>
+        <h4>Brain-Prime</h4>
+        <a>The task of the game: Is this number prime?<a>
     </li>
 </ol>
