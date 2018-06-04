@@ -2,7 +2,7 @@ install:
 	npm install
 
 start: 
-	npm run babel-node -- src/bin/prime.js
+	npm run babel-node -- src/bin/balance.js
 
 publish:
 	npm publish
