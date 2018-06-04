@@ -15,32 +15,18 @@ const sumDigits = (num) => {
 
 const balance = (num) => {
   const str = String(num);
-  let l = str.length;
+  const l = str.length;
   let x = 0;
   let y = 0;
-  let resultX = '';
-  let resultY = '';
   const integer = sumDigits(num) / l;
   if (isInteger(integer)) {
-    while (l > 0) {
-      resultX += integer;
-      l -= 1;
-    }
-    return resultX;
+    return `${integer}`.repeat(l);
   }
-  const a = (Math.ceil(sumDigits(num) / l) - 1);
-  const b = (Math.ceil(sumDigits(num) / l));
+  const maxNum = (Math.ceil(sumDigits(num) / l));
+  const minNum = maxNum - 1;
   while (x < l) {
-    if ((a * x) + (b * y) === sumDigits(num) && x + y === l) {
-      while (x > 0) {
-        resultX += a;
-        x -= 1;
-      }
-      while (y > 0) {
-        resultY += b;
-        y -= 1;
-      }
-      return `${resultX}${resultY}`;
+    if ((minNum * x) + (maxNum * y) === sumDigits(num) && x + y === l) {
+      return `${minNum}`.repeat(x) + `${maxNum}`.repeat(y);
     }
     y += 1;
     if (y === l) {
