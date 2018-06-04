@@ -2,7 +2,7 @@ import { cons } from 'hexlet-pairs';
 import generateNumber from '../utils';
 import startGame from '../controlOfGames';
 
-const isInteger = num => (num ** 0) === num;
+const isInteger = num => ((Math.ceil(num)) - num === 0);
 
 const sumDigits = (num) => {
   const str = String(num);
