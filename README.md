@@ -42,7 +42,9 @@
     <p>npm i nikita_ivochkin_project</p>
 
 <h3>Example</h3>
-```MacBook-Pro-Nikita:project-lvl1-s280 nikitaivockin$ even
+
+```
+MacBook-Pro-Nikita:project-lvl1-s280 nikitaivockin$ even
 Welcome to the Brain Games!
 Answer "yes" if number even otherwise answer "no".
 
@@ -58,4 +60,5 @@ Correct!
 Question: 84
 Your answer: yes
 Correct!
-Congratulations, nikita!```
+Congratulations, nikita!
+```
