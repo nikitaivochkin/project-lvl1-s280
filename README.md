@@ -3,6 +3,8 @@
 <a href="https://travis-ci.org/nikitaivochkin/project-lvl1-s280"><img src="https://travis-ci.org/nikitaivochkin/project-lvl1-s280.svg?branch=master" /></a>
 
 <h1>Welcome to Brain Games! v.1.8.0</h1>
+<h3>Usage</h3>
+    <p>For local start open cli and write game name</p>
 <h3>Your attention presented 6 games for the brain:</h3>
 <ol>
     <li>
@@ -38,4 +40,3 @@
 </ol>
 <h3>Install</h3>
     <p>npm i nikita_ivochkin_project</p>
-    <p>for local start open cli and write game name</p>
