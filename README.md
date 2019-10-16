@@ -42,20 +42,22 @@
     <p>npm i nikita_ivochkin_project</p>
 
 <h3>Example</h3>
-<p>MacBook-Pro-Nikita:project-lvl1-s280 nikitaivockin$ even</p>
-<p>Welcome to the Brain Games!</p>
-<p>Answer "yes" if number even otherwise answer "no".</p>
+```
+MacBook-Pro-Nikita:project-lvl1-s280 nikitaivockin$ even
+Welcome to the Brain Games!
+Answer "yes" if number even otherwise answer "no".
 
-<p>May I have your name?: nikita</p>
-<p>Hello, nikita!</p>
+May I have your name?: nikita
+Hello, nikita!
 
-<p>Question: 33</p>
-<p>Your answer: no</p>
-<p>Correct!</p>
-<p>Question: 47</p>
-<p>Your answer: no</p>
-<p>Correct!</p>
-<p>Question: 84</p>
-<p>Your answer: yes</p>
-<p>Correct!</p>
-<p>Congratulations, nikita!</p>
+Question: 33
+Your answer: no
+Correct!
+Question: 47
+Your answer: no
+Correct!
+Question: 84
+Your answer: yes
+Correct!
+Congratulations, nikita!
+```
