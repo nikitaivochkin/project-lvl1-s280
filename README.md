@@ -40,3 +40,22 @@
 </ol>
 <h3>Install</h3>
     <p>npm i nikita_ivochkin_project</p>
+
+<h3>Example</h3>
+<p>MacBook-Pro-Nikita:project-lvl1-s280 nikitaivockin$ even</p>
+<p>Welcome to the Brain Games!</p>
+<p>Answer "yes" if number even otherwise answer "no".</p>
+
+<p>May I have your name?: nikita</p>
+<p>Hello, nikita!</p>
+
+<p>Question: 33</p>
+<p>Your answer: no</p>
+<p>Correct!</p>
+<p>Question: 47</p>
+<p>Your answer: no</p>
+<p>Correct!</p>
+<p>Question: 84</p>
+<p>Your answer: yes</p>
+<p>Correct!</p>
+<p>Congratulations, nikita!</p>
