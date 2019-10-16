@@ -38,3 +38,4 @@
 </ol>
 <h3>Install</h3>
     <p>npm i nikita_ivochkin_project</p>
+    <p>for local start open cli and write game name</p>
